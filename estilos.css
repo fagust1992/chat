@@ -1,0 +1,283 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;               /* Estilos globales */ 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*  estilos del body */ 
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: rgb(243, 237, 237) ;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*  estilos del contenedor */ 
+
+.contenedor {
+	margin: auto;
+	width: 65%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;	
+}
+
+/*  header */ 
+
+header {
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	flex-direction:row;
+	justify-content:center;	
+	background: #e4e4e7;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 24px;
+	
+
+}
+/*  estilos globales del main */ 
+
+.main {
+	margin-top: 10px;
+	background: #fff;
+	padding: 10px;
+	width: 75%;
+
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	
+	
+}
+
+/*  etiquetas article del main */ 
+.main article{
+	align-self: center;
+}
+/*  parrafos del main  */ 
+.main  .parrafo{
+position: absolute;
+margin-left: 20px;
+
+}
+
+/*  imagen main */ 
+.main article .thumb img {
+
+ height: 170px;
+ width: 170px;
+ 
+}
+/*  estilos h2 del main */ 
+.main article h2 {
+	margin-bottom: 7px;
+	font-weight: normal;
+	font-size: 32px;
+}
+/*  estilos parrafo main  */ 
+.main article p {
+
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 3px;
+}
+/*  aside barra lateral columna   */ 
+aside {
+	width: 25%;
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	margin-top: 10px;
+	border-right: 2px solid #e5e6e9;
+	border-left: 1px solid  ;
+	border-top: 1px solid;
+	background: rgb(248, 239, 239);
+	border-bottom: 1px solid ;	
+}
+/*  usario de aside*/ 
+ .usuario{
+	display: flex;
+justify-content: space-between;
+padding: 15px;
+}
+
+/*  imagenes de aside */ 
+ .usuario img{
+	 width: 40px;
+	 height:40px;
+	 border-radius: 50%;
+	 padding-right: 5px;
+ }
+/*  usuarios  */ 
+.usuario .id_usuario{
+	font-size: 11px;
+	display: flex;
+
+}
+/*  usario parrafo */ 
+.usuario .id_usuario .parrafo{
+	margin-right: 5px;
+}
+
+/*  imagenes de aside  h3 */ 
+.usuario .id_usuario .parrafo h3{
+	font-size: 15px;
+	display: flex;
+
+}
+/*  imagenes de id-usuario h4 */ 
+.usuario .id_usuario .h4{
+	color: #b3b4b8;
+}
+.usuario .id_usuario .titulo{
+	font-size: 15px;
+position: absolute;
+
+
+}
+/*  usuario iconos */ 
+.usuario .iconos{
+	font-size: 17px;
+	letter-spacing: 5px;
+	color: #b3b4b8;
+}
+
+
+.usuario .i{
+padding: 5px;
+margin: 5px;
+}
+
+aside .ad {
+	font-size: 30px;
+	text-align: center;
+	color: rgb(19, 18, 18);
+	padding:10px 0;
+   
+	background: #fff;
+	border-bottom: 2px solid #e5e6e9;
+	
+}
+
+
+aside .ad1 {
+	display: flex;
+	font-size: 12px;
+
+}
+
+aside .ad1 img {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+
+	
+}
+
+ aside .ad button{
+	 background: rgb(153, 137, 211 ,0.7);
+	 padding: 10px;
+	 width: 140px;
+	margin: 10px;
+	border: #fff;
+	color: white;
+ }
+
+
+
+
+
+ /*  footer */ 
+footer {
+	margin-top: 20px;
+	background:rgb(153, 137, 211 ,0.7);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	color:#000;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	justify-content:space-between;
+}
+
+  /*  medias query para hacer responsive */ 
+
+@media screen and (max-width: 1000px) {
+	.main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction:row;
+	}
+
+	aside .ad {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 670px) {
+	header {
+		flex-direction:column;
+		padding-bottom: 20px; 
+	}
+
+	header .menu {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+
+	header .menu a {
+		margin:0 20px; 
+	}
+	.main article  p {
+		display: none;
+
+	 }
+
+.contenedor{
+	width: 100%;
+}
+	footer {
+		flex-direction:column;
+		text-align: center;
+	}
+
+	footer .autor {
+		order:2;
+	}
+
+	footer .redes-sociales {
+		order:1;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	
+     .main article  p {
+		display: none;
+
+	 }
+	 .main article h2{
+		 font-size: 15px;
+}
+.contenedor{
+	width: 100%;
+}
+}
